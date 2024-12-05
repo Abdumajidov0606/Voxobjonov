@@ -15,7 +15,7 @@ ul{
 
 .menyu .container{
     display: flex;
-    justify-content:center;
+    /* justify-content:center; */
     gap: 320px;
 
 }
@@ -23,8 +23,8 @@ ul{
     display: flex;
     background-color: #154224;
     justify-content: space-between;
-    padding: 20px 0px;
-    width: 1200px;
+    /* padding: 20px 0px; */
+    /* width: 1200px; */
     position: fixed;
     z-index: 99;
     top: 0px;
@@ -38,19 +38,19 @@ ul{
     gap: 10px;
     animation: logo 2s linear infinite;
     font-family: "Bebas Neue", sans-serif;
-    color: white;
+    /* color: white; */
 }
 .logos p{
     font-size: 24px;
 }
-.menyu h1{
+.logos h1{
     letter-spacing: 4px;
 }
 
 @keyframes logo {
     0%{
         transform: rotateY(0deg);
-        color: yellow;
+        color: rgb(159, 159, 63);
     }
     50%{
         transform: rotateY(180deg);
@@ -58,7 +58,7 @@ ul{
     }
     100%{
         transform: rotateY(360deg);
-        color: rgb(206, 206, 79);
+        color: rgb(157, 160, 63);
     }
 } 
 
@@ -92,7 +92,7 @@ ul{
     padding-bottom: 600px;
 }
 
-.section1 .axborot h1 {
+.axborot h1 {
     text-shadow: 2px 1px 1px;
     font-size: 36px;
     color: rgb(16, 78, 78);
@@ -100,15 +100,13 @@ ul{
     padding-bottom: 50px;
 
 }
-.section1 .axborot h3 {
+.axborot h3 {
     text-shadow: 1px 1px 1px;
     font-size: 16px;
     color: rgb(18, 75, 75);
     text-align: center;
 
 }
-
-
 .section1{
     background-image: url(../img/main.webp);
     background-size: 100%;
@@ -118,24 +116,24 @@ ul{
     width: 100%;
 }
 .information{
-    background-color: #b2cfd7;
+    /* background-color: #b2cfd7; */
 }
 .information h2{
-    text-align: center;
+    /* text-align: center;
     font-size: 24px;
     color: #154224;
     font-weight: 700px;
-    margin: 10px;
+    margin: 10px; */
 }
 .information p{
-    text-align: center;
+    /* text-align: center;
     font-weight: 400px;
     font-size: 18px;
     color: hsl(140, 52%, 17%);
     margin:10px;
     margin-left: 20px;
     margin-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
 }
 .elon{
     font-weight: 700px;
@@ -183,6 +181,7 @@ ul{
 }
 .inputs{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
@@ -319,6 +318,7 @@ input{
     position: relative;
     overflow: hidden;
 }
+
 .regular{
     margin-left: 80px;
 }
@@ -425,6 +425,7 @@ input{
 }
 .qidirish button:hover{
     background-color:rgb(176, 176, 21) ;
+    transform: scale(1.1);
 }
 footer{
     width: 100%;
@@ -461,10 +462,14 @@ footer{
 }
 .tel button:hover{
     background-color:yellow;
+    transform: scale(1.1);
 }
 .network{
     /* width: 400px; */
     text-align: center;
+}
+.network a{
+    text-decoration: none;
 }
 .logotip{
     display: flex;
@@ -476,10 +481,13 @@ footer{
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 4px;
 }
+
+
+
 .logotip i{
     font-size: 44px;
 }
-.tarmoq{
+.tarmoq a{
     /* width: 400px; */
     display: flex;
     align-items: center;
@@ -491,6 +499,9 @@ footer{
 .tarmoq i{
     font-size: 18px;
 }
-.tarmoq:hover{
+.tarmoq a:hover{
     color: yellow;
 }
+
+
+
